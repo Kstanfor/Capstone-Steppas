@@ -13,11 +13,40 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
+
+    public void Sprint()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        {
+            speed = 20.0f;
+        }
+        else if(Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
+        {
+            speed = 10.0f;
+        }
+    }
+
+    public void Crouch()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
+        {
+            speed = 3.0f;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.RightControl))
+        {
+            speed = 10.0f;
+        }
+    }
+
     void Update()
     {
         speedX = Input.GetAxisRaw("Horizontal") * speed;
         speedY = Input.GetAxisRaw("Vertical") * speed;
 
         rb.velocity = new Vector2(speedX, speedY);
+
+        Sprint();
+
+        Crouch();
     }
 }
