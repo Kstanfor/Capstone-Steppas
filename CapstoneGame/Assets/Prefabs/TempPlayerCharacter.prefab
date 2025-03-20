@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3313765696796216381}
-  - component: {fileID: 4974304721221662211}
   - component: {fileID: 3684555108130881828}
   m_Layer: 0
   m_Name: WalkTrigger
@@ -33,33 +32,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6442161826188776584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &4974304721221662211
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2976542969581583184}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &3684555108130881828
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104,7 +76,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1269895564439023409}
-  - component: {fileID: 9101617555202361917}
   - component: {fileID: 5053885159860780244}
   m_Layer: 0
   m_Name: CrouchTrigger
@@ -128,33 +99,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6442161826188776584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &9101617555202361917
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6269492139729775713}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &5053885159860780244
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -200,7 +144,6 @@ GameObject:
   m_Component:
   - component: {fileID: 221748107429517533}
   - component: {fileID: 938218850719035778}
-  - component: {fileID: 8887174312531386164}
   m_Layer: 0
   m_Name: SprintTrigger
   m_TagString: Untagged
@@ -258,33 +201,6 @@ CircleCollider2D:
   m_Offset: {x: 3.4237413, y: 0}
   serializedVersion: 2
   m_Radius: 3.9237413
---- !u!50 &8887174312531386164
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6939822781798895913}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &7027533944218117048
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +333,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1115565884704415597
 BoxCollider2D:
   m_ObjectHideFlags: 0

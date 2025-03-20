@@ -12,10 +12,8 @@ public class EnemyScript : MonoBehaviour
     private float Distance;
     public float Speed;
 
-    void Start()
-    {
-        
-    }
+    public float StartPositionX;
+    public float StartPositionY;
 
     void Update()
     {
@@ -26,10 +24,19 @@ public class EnemyScript : MonoBehaviour
 
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, Speed * Time.deltaTime);
         }   
+        else if(PlayerDetected == false)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(StartPositionX, StartPositionY), Speed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerDetected = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        PlayerDetected = false;
     }
 }
