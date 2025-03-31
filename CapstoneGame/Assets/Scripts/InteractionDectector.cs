@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml.Serialization;
 using UnityEngine;
+//using UnityEngine.InputSystem;
 
 public class InteractionDectector : MonoBehaviour
 {
@@ -13,13 +13,10 @@ public class InteractionDectector : MonoBehaviour
         interactionIcon.SetActive(false);
     }
 
-    public void OnInteract()
-    {
-        if (context.performed)
-        {
-            interactableInRange?.Interact();
-        }
-    }
+   // public void OnInteract(.CallbackContext context)
+    //{
+
+   // }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
