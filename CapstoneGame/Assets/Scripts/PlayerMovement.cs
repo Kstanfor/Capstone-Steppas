@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject CrouchTrigger;
 
     Rigidbody2D rb;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

@@ -32,11 +32,17 @@ public class EnemyScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerDetected = true;
+        if (collision.gameObject.tag == "MovementSpeed")
+        {
+            PlayerDetected = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        PlayerDetected = false;
+        if (collision.gameObject.tag == "MovementSpeed")
+        {
+            PlayerDetected = false;
+        }
     }
 }
