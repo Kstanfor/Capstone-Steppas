@@ -270,7 +270,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -438,6 +438,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 3.0449047
       objectReference: {fileID: 0}
+    - target: {fileID: 5475759091605894146, guid: 86eafd8e06bef984990570c6c36d622f, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 61813216}
     - target: {fileID: 5475759091605894146, guid: 86eafd8e06bef984990570c6c36d622f, type: 3}
       propertyPath: HidingSpots
       value: 

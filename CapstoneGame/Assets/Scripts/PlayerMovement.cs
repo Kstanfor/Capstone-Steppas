@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     float speedX;
     float speedY;
 
+    public GameObject Player;
     public GameObject WalkTrigger;
     public GameObject SprintTrigger;
     public GameObject CrouchTrigger;
@@ -73,5 +74,13 @@ public class PlayerMovement : MonoBehaviour
         Sprint();
 
         Crouch();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Hide" && Input.GetKeyDown("e"))
+        {
+
+        }
     }
 }
