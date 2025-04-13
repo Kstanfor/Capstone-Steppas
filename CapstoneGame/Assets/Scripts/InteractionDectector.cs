@@ -13,10 +13,24 @@ public class InteractionDectector : MonoBehaviour
         interactionIcon.SetActive(false);
     }
 
-   // public void OnInteract(.CallbackContext context)
+    // public void OnInteract(.CallbackContext context)
     //{
 
-   // }
+    // }
+    void Update()
+    {
+        // Check if the player presses the 'E' key
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            // Make sure there is an interactable object available
+            if (interactableInRange != null)
+            {
+                // Call the Interact method on the interactable object.
+                // This method should be implemented by any class that implements IInteractable.
+                interactableInRange.Interact();
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
