@@ -4,18 +4,32 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject PlayerObject;
-
+    HidingSpots IsTouchingHideSpot;
     public bool ShowPlayer;
+
+    public GameObject PlayerObject;
 
     void Start()
     {
-        
+        IsTouchingHideSpot = GameObject.FindGameObjectWithTag("Hide").GetComponent<HidingSpots>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        ShowPlayer = IsTouchingHideSpot.isTouchingPlayer;
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if(ShowPlayer == true)
+            {
+                ShowPlayer = false;
+                PlayerObject.SetActive(false);
+            }
+            else if (ShowPlayer == false)
+            {
+                ShowPlayer = true;
+                PlayerObject.SetActive(true);
+            }
+        }
     }
 }
