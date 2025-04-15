@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject PlayerObject;
 
+    public bool ShowPlayer;
+
     void Start()
     {
         
