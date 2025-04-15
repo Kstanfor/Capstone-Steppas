@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class HidePlayer : MonoBehaviour
 {
     HidingSpots IsTouchingHideSpot;
     public bool ShowPlayer;
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if(ShowPlayer == true)
+            if (ShowPlayer == true)
             {
                 ShowPlayer = false;
                 PlayerObject.SetActive(false);
