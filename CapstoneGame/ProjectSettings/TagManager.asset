@@ -8,6 +8,7 @@ TagManager:
   - Hide
   - MovementSpeed
   - Item
+  - Enemy
   layers:
   - Default
   - TransparentFX
