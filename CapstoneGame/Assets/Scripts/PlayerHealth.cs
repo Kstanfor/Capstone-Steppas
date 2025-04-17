@@ -19,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
         if(Damage == true)
         {
             Health--;
+            Damage = false;
         }
 
         if (Health == 2)
@@ -32,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
         else if(Health == 0)
         {
             Heart3.SetActive(false);
+            Player.SetActive(false);
         }
     }
 
@@ -40,11 +42,6 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             Damage = true;
-        }
-
-        if(Damage == true)
-        {
-            Damage = false;
         }
     }
 
