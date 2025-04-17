@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -13,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject Heart3;
 
     public GameObject Player;
+
 
     void Update()
     {
@@ -52,4 +54,15 @@ public class PlayerHealth : MonoBehaviour
             Damage = false;
         }
     }
+
+    public void increaseHealthSmall()
+    {
+        if (Health == 1 || Health == 2) { Health++; }
+    }
+    public void increaseHealthBig()
+    {
+        if (Health == 2) { Health++; }
+        else if(Health == 1) { Health += 2; }
+    }
 }
+
