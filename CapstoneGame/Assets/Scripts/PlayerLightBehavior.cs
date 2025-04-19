@@ -5,33 +5,25 @@ using UnityEngine;
 public class PlayerLightBehavior : MonoBehaviour
 {
 
-    private Light l;
+    public GameObject l;
 
-    public float reductionRate = 0.02f;
-    public float maxRange = 3.5f;
-    public float minRange = 0.75f;
+    public float reductionTime = 100f;
+    public float maxScale = 15f;
+    public float minScale = 6f;
+
+    private float startTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        l = GetComponent<Light>();
-        StartCoroutine(lightShrink());
+        startTime = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        float elapsedTime = Time.time - startTime;
+        float currScale = Mathf.Lerp(maxScale, minScale, elapsedTime/reductionTime);
+        transform.localScale = new Vector3 (currScale, currScale, currScale);
     }
-
-    IEnumerator lightShrink()
-    {
-        while(l.range > minRange)
-        {
-            l.range -= reductionRate;
-            yield return new WaitForSeconds(0.5f);
-        }
-
-        yield return null;
-    }
-}
+};
