@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public GameObject doorCollider;
+    private GameObject doorCollider;
     public GameObject requiredKey;
 
     private SpriteRenderer sr;
@@ -33,6 +33,7 @@ public class Door : MonoBehaviour
             {
                 if(GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryController>().itemPrefabs.ElementAt(i) == requiredKey)
                 {
+                    doorCollider.SetActive(false);
                     sr.sprite = openDoor;
                 }
             }
