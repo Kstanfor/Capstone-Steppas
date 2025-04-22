@@ -291,6 +291,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2198413428473076560, guid: ee1fdacf16e39d241a0c6ffec6f772a2,
+        type: 3}
+      propertyPath: Name
+      value: HealthPot
+      objectReference: {fileID: 0}
     - target: {fileID: 2087292542136130895, guid: ee1fdacf16e39d241a0c6ffec6f772a2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -742,6 +747,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HealthPackItem Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7881686773986644312, guid: 6f5fdd17d31d2374ca62697f905ec7d4,
+        type: 3}
+      propertyPath: Name
+      value: HealthPack
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

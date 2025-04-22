@@ -10,7 +10,7 @@ public class ItemPickUpUIController : MonoBehaviour
 
     public GameObject popupPrefab;
     public int maxPopups = 5;
-    public float popupDuration;
+    public float popupDuration = 3f;
 
     private readonly Queue<GameObject> activePopups = new();
 
