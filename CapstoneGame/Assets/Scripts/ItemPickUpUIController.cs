@@ -46,6 +46,7 @@ public class ItemPickUpUIController : MonoBehaviour
         }
 
         //Fadeout and then Detroy
+        StartCoroutine(FadeOutAndDestroy(newPopup));
 
     }
 
