@@ -99,5 +99,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   l: {fileID: 5277363214723396639}
   reductionTime: 100
-  maxScale: 15
-  minScale: 6
+  maxScale: 2.54
+  minScale: 1.1
