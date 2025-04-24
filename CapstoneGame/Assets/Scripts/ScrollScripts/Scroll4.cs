@@ -83,6 +83,7 @@ public class Scroll4 : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             isTouchPlayer = false;
+            KeepTrackOfText = 0;
         }
     }
 }
