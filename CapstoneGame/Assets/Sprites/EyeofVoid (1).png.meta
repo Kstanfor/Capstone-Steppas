@@ -108,7 +108,994 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: EyeofVoid (1)_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 587
+        width: 1
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30190ddfc62d64c40b4599ae4b82da72
+      internalID: -2019644089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 520
+        width: 133
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e993d8647cca84389ec7429d9df7e6
+      internalID: 190225292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 423
+        width: 13
+        height: 1
+      alignment: 9
+      pivot: {x: 0.45574632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4172c4aaba7507347bb89998e22f4d0c
+      internalID: 403860970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 398
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f41d0b5e1abfd249886de27c1dcb06a
+      internalID: -577541149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_4
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 599
+        width: 61
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ed4cbd0c6102f4599a193739532bbd
+      internalID: 950758980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 599
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e7835d248995043a867355fa9acd39
+      internalID: -608026343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 379
+        width: 120
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648e95e084bd287469f858c757637fb4
+      internalID: -1049180467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_7
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 599
+        width: 61
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaafe7d9bf271394587a862801d3d630
+      internalID: -2064019056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_8
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 365
+        width: 147
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d287558ca2a694fadfb5df11f29900
+      internalID: -846536880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 599
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e34f7466faf4264f992e379ad7c571f
+      internalID: 2004281440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_10
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 599
+        width: 29
+        height: 1
+      alignment: 9
+      pivot: {x: 0.32298583, y: 1.2965637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064cbcaf65c1b444594ef5a302cb1f6c
+      internalID: -377583857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_11
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 372
+        width: 154
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e53cf4481c6f542b3eec3cc4145637
+      internalID: -220566016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_12
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 599
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed5ef0586e246b4eb4065915eff7c35
+      internalID: -291772189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae544b8f44ad4541a283eed6f80d762
+      internalID: 303271529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 367
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9f1c183b893364181d9ca313267b30
+      internalID: -618128169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_15
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 599
+        width: 50
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287113a824b31344aaa58f151d149493
+      internalID: 1629900795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_16
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 599
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f673b15804784409dc43c7da888b89
+      internalID: -647544717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 329
+        width: 1
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4e7da2eac023649aaa9ab8c1cf46ba
+      internalID: 489376898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a20e86301ed1540ae4d90db57761b0
+      internalID: -176635632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 1
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5043b4268346b9945b9697585f9e72dd
+      internalID: 781595301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 1
+        height: 8
+      alignment: 9
+      pivot: {x: -2.181104, y: -0.11871338}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6d17cc5d4e0b649974f597b86b72a0
+      internalID: -881960197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_21
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 223
+        width: 144
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04edc1c49cd0274c91801367bec24eb
+      internalID: 2100192211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 1
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ae8feb730b1374aa3e31ad3187384a
+      internalID: -554061468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550087b7f0a4aa54186910a140c6217d
+      internalID: 827981727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_24
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 220
+        width: 150
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189c72156cea9c548abf23e013bc5a74
+      internalID: -2065995126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92731c559717c384ba9139ea7f704c91
+      internalID: 1290285084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 141
+        width: 1
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ffe327d57595945bc95ef0a7268cf0
+      internalID: 1995884632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_27
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 207
+        width: 167
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387a78e506936f843a2bcbfa4e749e69
+      internalID: -502426692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 179
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba48c14a5c17ce74ebb9c267867ef5fa
+      internalID: -459988796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 243
+        width: 1
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9879fb90078a8b4fafe6a40cc396991
+      internalID: -614943987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a3dfef89c67f24cb9a65820c3becff
+      internalID: 1148813064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 1
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a72571414132e940a7f34a7945f46c0
+      internalID: -1056202269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 1
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f1b82b4d7674143a3fa4640f8b9fff
+      internalID: 1195287838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf7535e58309c246b34eaadcf3458a2
+      internalID: -2016323269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483c33852f266064fb7f4112718c2a4f
+      internalID: -1785792022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec3b7f9c57846e479ace55b6253b0fb
+      internalID: -397683237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b48f3c0f803c1418886caf39a07392
+      internalID: -1638026533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 1
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afa528430ef0b0418310ea781a420b1
+      internalID: 1771405555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_38
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 45
+        width: 144
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3741f74c8f04f164fa6536bbfd7524e5
+      internalID: 369790083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_39
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 49
+        width: 133
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336fde46bf5a71e429df686f87822de0
+      internalID: -1043891474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_40
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 56
+        width: 154
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2848f56bf7354c54097608778d548271
+      internalID: -668131931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 1
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7ece3ca0de33e44872086d95e0860c
+      internalID: -1347866825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609a760f07b86c347b6030c840a7d89c
+      internalID: -1416949287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6090e75eaa5317478bd01452201688d
+      internalID: 1298582641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6635e9e5c7b62b84f8c60fb362aa4786
+      internalID: -372171065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bc1ec9f45580946a524f90bf217f1b
+      internalID: 1470930658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EyeofVoid (1)_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 1
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5b4ae8960c3e0478cf9a1e1d3a4525
+      internalID: 1615201178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +1106,54 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EyeofVoid (1)_0: -2019644089
+      EyeofVoid (1)_1: 190225292
+      EyeofVoid (1)_10: -377583857
+      EyeofVoid (1)_11: -220566016
+      EyeofVoid (1)_12: -291772189
+      EyeofVoid (1)_13: 303271529
+      EyeofVoid (1)_14: -618128169
+      EyeofVoid (1)_15: 1629900795
+      EyeofVoid (1)_16: -647544717
+      EyeofVoid (1)_17: 489376898
+      EyeofVoid (1)_18: -176635632
+      EyeofVoid (1)_19: 781595301
+      EyeofVoid (1)_2: 403860970
+      EyeofVoid (1)_20: -881960197
+      EyeofVoid (1)_21: 2100192211
+      EyeofVoid (1)_22: -554061468
+      EyeofVoid (1)_23: 827981727
+      EyeofVoid (1)_24: -2065995126
+      EyeofVoid (1)_25: 1290285084
+      EyeofVoid (1)_26: 1995884632
+      EyeofVoid (1)_27: -502426692
+      EyeofVoid (1)_28: -459988796
+      EyeofVoid (1)_29: -614943987
+      EyeofVoid (1)_3: -577541149
+      EyeofVoid (1)_30: 1148813064
+      EyeofVoid (1)_31: -1056202269
+      EyeofVoid (1)_32: 1195287838
+      EyeofVoid (1)_33: -2016323269
+      EyeofVoid (1)_34: -1785792022
+      EyeofVoid (1)_35: -397683237
+      EyeofVoid (1)_36: -1638026533
+      EyeofVoid (1)_37: 1771405555
+      EyeofVoid (1)_38: 369790083
+      EyeofVoid (1)_39: -1043891474
+      EyeofVoid (1)_4: 950758980
+      EyeofVoid (1)_40: -668131931
+      EyeofVoid (1)_41: -1347866825
+      EyeofVoid (1)_42: -1416949287
+      EyeofVoid (1)_43: 1298582641
+      EyeofVoid (1)_44: -372171065
+      EyeofVoid (1)_45: 1470930658
+      EyeofVoid (1)_46: 1615201178
+      EyeofVoid (1)_5: -608026343
+      EyeofVoid (1)_6: -1049180467
+      EyeofVoid (1)_7: -2064019056
+      EyeofVoid (1)_8: -846536880
+      EyeofVoid (1)_9: 2004281440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
