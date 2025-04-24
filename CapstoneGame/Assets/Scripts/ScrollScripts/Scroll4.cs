@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scroll2 : MonoBehaviour
+public class Scroll4 : MonoBehaviour
 {
     public GameObject TextBox;
-    public GameObject Text2Part1;
-    public GameObject Text2Part2;
+    public GameObject Text4Part1;
+    public GameObject Text4Part2;
+    public GameObject Text4Part3;
     public GameObject PressSpace;
 
     public bool isTouchPlayer = false;
@@ -16,8 +17,9 @@ public class Scroll2 : MonoBehaviour
     void Start()
     {
         TextBox.SetActive(false);
-        Text2Part1.SetActive(false);
-        Text2Part2.SetActive(false);
+        Text4Part1.SetActive(false);
+        Text4Part2.SetActive(false);
+        Text4Part3.SetActive(false);
         PressSpace.SetActive(false);
     }
 
@@ -31,18 +33,28 @@ public class Scroll2 : MonoBehaviour
         if (isTouchPlayer == true && Input.GetKeyDown(KeyCode.E) && KeepTrackOfText == 0)
         {
             TextBox.SetActive(true);
-            Text2Part1.SetActive(true);
-            Text2Part2.SetActive(false);
+            Text4Part1.SetActive(true);
+            Text4Part2.SetActive(false);
+            Text4Part3.SetActive(false);
             PressSpace.SetActive(true);
         }
         else if (KeepTrackOfText == 1)
         {
             TextBox.SetActive(true);
-            Text2Part1.SetActive(false);
-            Text2Part2.SetActive(true);
+            Text4Part1.SetActive(false);
+            Text4Part2.SetActive(true);
+            Text4Part3.SetActive(false);
             PressSpace.SetActive(true);
         }
-        else if (KeepTrackOfText == 2)
+        else if(KeepTrackOfText == 2)
+        {
+            TextBox.SetActive(true);
+            Text4Part1.SetActive(false);
+            Text4Part2.SetActive(false);
+            Text4Part3.SetActive(true);
+            PressSpace.SetActive(true);
+        }
+        else if (KeepTrackOfText == 3)
         {
             isTouchPlayer = false;
             KeepTrackOfText = 0;
@@ -51,8 +63,9 @@ public class Scroll2 : MonoBehaviour
         if (isTouchPlayer == false)
         {
             TextBox.SetActive(false);
-            Text2Part1.SetActive(false);
-            Text2Part2.SetActive(false);
+            Text4Part1.SetActive(false);
+            Text4Part2.SetActive(false);
+            Text4Part3.SetActive(false);
             PressSpace.SetActive(false);
             KeepTrackOfText = 0;
         }

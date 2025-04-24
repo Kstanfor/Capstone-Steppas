@@ -5,10 +5,10 @@ using UnityEngine;
 public class Scroll1 : MonoBehaviour
 {
     public GameObject TextBox;
-    public GameObject Text1;
-    public GameObject Text2;
-    public GameObject Text3;
-    public GameObject Text4;
+    public GameObject Text1Part1;
+    public GameObject Text1Part2;
+    public GameObject Text1Part3;
+    public GameObject Text1Part4;
     public GameObject PressSpace;
 
     public int KeepTrackOfText = 0;
@@ -17,10 +17,10 @@ public class Scroll1 : MonoBehaviour
     void Start()
     {
         TextBox.SetActive(false);
-        Text1.SetActive(false);
-        Text2.SetActive(false);
-        Text3.SetActive(false);
-        Text4.SetActive(false);
+        Text1Part1.SetActive(false);
+        Text1Part2.SetActive(false);
+        Text1Part3.SetActive(false);
+        Text1Part4.SetActive(false);
         PressSpace.SetActive(false);
     }
 
@@ -34,37 +34,37 @@ public class Scroll1 : MonoBehaviour
         if (isTouchPlayer == true && Input.GetKeyDown(KeyCode.E) && KeepTrackOfText == 0)
         {
             TextBox.SetActive(true);
-            Text1.SetActive(true);
-            Text2.SetActive(false);
-            Text3.SetActive(false);
-            Text4.SetActive(false);
+            Text1Part1.SetActive(true);
+            Text1Part2.SetActive(false);
+            Text1Part3.SetActive(false);
+            Text1Part4.SetActive(false);
             PressSpace.SetActive(true);
         }
         else if (KeepTrackOfText == 1)
         {
             TextBox.SetActive(true);
-            Text1.SetActive(false);
-            Text2.SetActive(true);
-            Text3.SetActive(false);
-            Text4.SetActive(false);
+            Text1Part1.SetActive(false);
+            Text1Part2.SetActive(true);
+            Text1Part3.SetActive(false);
+            Text1Part4.SetActive(false);
             PressSpace.SetActive(true);
         }
         else if (KeepTrackOfText == 2)
         {
             TextBox.SetActive(true);
-            Text1.SetActive(false);
-            Text2.SetActive(false);
-            Text3.SetActive(true);
-            Text4.SetActive(false);
+            Text1Part1.SetActive(false);
+            Text1Part2.SetActive(false);
+            Text1Part3.SetActive(true);
+            Text1Part4.SetActive(false);
             PressSpace.SetActive(true);
         }
         else if (KeepTrackOfText == 3)
         {
             TextBox.SetActive(true);
-            Text1.SetActive(false);
-            Text2.SetActive(false);
-            Text3.SetActive(false);
-            Text4.SetActive(true);
+            Text1Part1.SetActive(false);
+            Text1Part2.SetActive(false);
+            Text1Part3.SetActive(false);
+            Text1Part4.SetActive(true);
             PressSpace.SetActive(true);
         }
         else if (KeepTrackOfText == 4)
@@ -76,10 +76,10 @@ public class Scroll1 : MonoBehaviour
         if (isTouchPlayer == false)
         {
             TextBox.SetActive(false);
-            Text1.SetActive(false);
-            Text2.SetActive(false);
-            Text3.SetActive(false);
-            Text4.SetActive(false);
+            Text1Part1.SetActive(false);
+            Text1Part2.SetActive(false);
+            Text1Part3.SetActive(false);
+            Text1Part4.SetActive(false);
             PressSpace.SetActive(false);
         }
     }

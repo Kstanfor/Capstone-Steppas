@@ -6,8 +6,8 @@ using UnityEngine;
 public class Scroll3 : MonoBehaviour
 {
     public GameObject TextBox;
-    public GameObject Text1;
-    public GameObject Text2;
+    public GameObject Text3Part1;
+    public GameObject Text3Part2;
     public GameObject PressSpace;
 
     public bool isTouchPlayer = false;
@@ -17,8 +17,8 @@ public class Scroll3 : MonoBehaviour
     void Start()
     {
         TextBox.SetActive(false);
-        Text1.SetActive(false);
-        Text2.SetActive(false);
+        Text3Part1.SetActive(false);
+        Text3Part2.SetActive(false);
         PressSpace.SetActive(false);
     }
 
@@ -32,15 +32,15 @@ public class Scroll3 : MonoBehaviour
         if (isTouchPlayer == true && Input.GetKeyDown(KeyCode.E) && KeepTrackOfText == 0)
         {
             TextBox.SetActive(true);
-            Text1.SetActive(true);
-            Text2.SetActive(false);
+            Text3Part1.SetActive(true);
+            Text3Part2.SetActive(false);
             PressSpace.SetActive(true);
         }
         else if (KeepTrackOfText == 1)
         {
             TextBox.SetActive(true);
-            Text1.SetActive(false);
-            Text2.SetActive(true);
+            Text3Part1.SetActive(false);
+            Text3Part2.SetActive(true);
             PressSpace.SetActive(true);
         }
         else if (KeepTrackOfText == 2)
@@ -52,8 +52,8 @@ public class Scroll3 : MonoBehaviour
         if (isTouchPlayer == false)
         {
             TextBox.SetActive(false);
-            Text1.SetActive(false);
-            Text2.SetActive(false);
+            Text3Part1.SetActive(false);
+            Text3Part2.SetActive(false);
             PressSpace.SetActive(false);
             KeepTrackOfText = 0;
         }
