@@ -6,10 +6,15 @@ public class PlayerLightBehavior : MonoBehaviour
 {
 
     public GameObject l;
+    public Light playerLight;
 
     public float reductionTime = 100f;
     public float maxScale = 15f;
     public float minScale = 6f;
+
+    public float MaxRange = 7f;
+    public float minRange = 3f;
+    public float reductionRate = 0.0192f;
 
     private float startTime;
 
@@ -25,5 +30,16 @@ public class PlayerLightBehavior : MonoBehaviour
         float elapsedTime = Time.time - startTime;
         float currScale = Mathf.Lerp(maxScale, minScale, elapsedTime/reductionTime);
         transform.localScale = new Vector3 (currScale, currScale, currScale);
+        if (playerLight.range > minRange)
+        {
+            playerLight.range -= reductionRate;
+        }
+        
+    }
+
+    void resetLight()
+    {
+        transform.localScale = new Vector3(maxScale, maxScale, maxScale);
+        GetComponent<Light>().range = MaxRange;
     }
 };
