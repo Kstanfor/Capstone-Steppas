@@ -2257,7 +2257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.6, y: -160.58}
+  m_AnchoredPosition: {x: 1.6, y: -162}
   m_SizeDelta: {x: 472.33, y: 77.156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &608707939
@@ -2280,8 +2280,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: There have been reports of portals to other  dimensions, and that is NOT
-    our jurisdiction. Please focus your work to your own dimension and Hell.
+  m_text: There have been reports of entities roaming on their own without supervision.
+    Please remember that these entities are dangerou, and that it is only by the
+    power of our necronomicon that they are kept under control.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2308,8 +2309,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2392,7 +2393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.6, y: -160.58}
+  m_AnchoredPosition: {x: 1.6, y: -159}
   m_SizeDelta: {x: 472.33, y: 77.156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &684793801
@@ -2415,8 +2416,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Greetings!\r\n\r\nThis is a friendly reminder that we are a cult that
-    worships the Devil, and NOTHING else. \n"
+  m_text: 'Greetings!
+
+
+
+    This is a friendly reminder that if your are summoning
+    an unearthly entity to be your thrall, please don''t allow them to wander the
+    halls without supervision.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2443,8 +2449,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2510,7 +2516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &706594696
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5159,33 +5165,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241459110}
   m_CullTransparentMesh: 1
---- !u!1 &1306845978 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4605918804036786293, guid: 55200a3cb59aa1f4b89b40e71e661804,
-    type: 3}
-  m_PrefabInstance: {fileID: 6932366183039682686}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1306845984
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306845978}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e91162975bc125f4ab977db95fb026ca, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1401068249
 GameObject:
   m_ObjectHideFlags: 0
@@ -6606,8 +6585,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Whoever is doing this needs to stop now, or you will be sacrificed. \r\n\r\nGlory
-    To The Shrouded Path,\r\nThe HR Department.\r\n"
+  m_text: "Without supervision, these entities may attack fellow members. If you
+    are unable to follow this simple safety procedure, you will be sacrificed.\r\n\r\nGlory
+    To The Shrouded Path,\r\nThe HR Department.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6634,8 +6614,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8562,6 +8542,79 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &820987347604257570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1476271194626954348, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_Name
+      value: EyeEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 3221048056850175476, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821415395785098386, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1747030463153266003}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00a97c5439db78c4183febbc5868e314, type: 3}
 --- !u!1 &1747030463153266003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4576216051648898481, guid: 7bcffb81d7b39254da8ca7c1451ff945,
@@ -8911,93 +8964,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5176f1a03c917914babe3edf2dbdb6ee, type: 3}
---- !u!1001 &6932366183039682686
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 225110888192267534, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -17.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 514589377045879277, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4605918804036786293, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 4605918804036786293, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 8448136360709113995, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1747030463153266003}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4605918804036786293, guid: 55200a3cb59aa1f4b89b40e71e661804,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1306845984}
-  m_SourcePrefab: {fileID: 100100000, guid: 55200a3cb59aa1f4b89b40e71e661804, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -9005,7 +8971,7 @@ SceneRoots:
   - {fileID: 2122715773}
   - {fileID: 6548863352066215621}
   - {fileID: 6208731497966333578}
-  - {fileID: 6932366183039682686}
+  - {fileID: 820987347604257570}
   - {fileID: 5796744380622850530}
   - {fileID: 2216844900021997932}
   - {fileID: 1948519470}
