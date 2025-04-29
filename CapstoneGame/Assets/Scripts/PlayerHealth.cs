@@ -37,6 +37,12 @@ public class PlayerHealth : MonoBehaviour
             Heart3.SetActive(false);
             Player.SetActive(false);
         }
+        else if(Health == 3)
+        {
+            Heart1.SetActive(true);
+            Heart2.SetActive(true);
+            Heart3.SetActive(true);
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
