@@ -18,6 +18,11 @@ public class EnemyScript : MonoBehaviour
 
     Vector3 FlipSprite;
 
+    public int X;
+    public int X2;
+    public int Y;
+    public int Z;
+
     void Update()
     {
         if (PlayerDetected == true)
@@ -38,11 +43,11 @@ public class EnemyScript : MonoBehaviour
 
         if (FlipSprite.x < transform.position.x)
         {
-            transform.localScale = new Vector3(-3, 3, 3); 
+            transform.localScale = new Vector3(X, Y, Z); 
         }
         else if (FlipSprite.x > transform.position.x)
         {
-            transform.localScale = new Vector3(3, 3, 3);
+            transform.localScale = new Vector3(X2, Y, Z);
         }
     }
 

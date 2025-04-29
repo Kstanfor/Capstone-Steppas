@@ -3235,7 +3235,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Director O\u2019Connor,\r\nThe undead have finally revolted against Rathel.
-    When I first tore the page out of the necronomicon that warned of the undead
+    When I first tore the page out of the necronomicon that warned of the thralls
     turning on their masters after 6 years, 6 months, and 6 days, I was sure that"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3777,9 +3777,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'WARNING: Bodies kept reanimated for longer than 6 years, 6 months, and
-    6 days will go feral and bloodthirsty, attacking whoever is near. Thankfully
-    shooting them in the head should be enough to permanently destroy the undead,'
+  m_text: 'WARNING: Thralls kept around for longer than 6 years, 6 months, and 6
+    days will go feral and bloodthirsty, attacking whoever is near. All spells and
+    potions keeping them under control will no longer be effective. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5088,7 +5088,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "but it's best to avoid this scenario if at all possible. \r"
+  m_text: If at all possible, dispose of your thralls before this point is reached
+    and summon a new one. Once they enter this state, nothing can harm them, so it
+    is better for all involved to avoid this outcome completely.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7185,10 +7187,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'While the undead can be used for a variety of tasks, they are still flesh
-    and bone, and will wear and tear over time. Unless further precautions are taken,
-    the bodies will rot and become unusable after a year. Spells and potions can
-    be used to extend the body''s durability. '
+  m_text: 'While the thralls can be used for a variety of tasks, they  still have
+    minds of their own, and will fight the thrall put on them. Unless further precautions
+    are taken, they will soon fight through these spells. Spells and potions can
+    be used to extend control over the beasts. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8607,6 +8609,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6821415395785098386, guid: 00a97c5439db78c4183febbc5868e314,
         type: 3}
+      propertyPath: X
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821415395785098386, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: Y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821415395785098386, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: Z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821415395785098386, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
+      propertyPath: X2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821415395785098386, guid: 00a97c5439db78c4183febbc5868e314,
+        type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 1747030463153266003}
@@ -8964,6 +8986,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5176f1a03c917914babe3edf2dbdb6ee, type: 3}
+--- !u!1001 &9120939085226740135
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 989761864631557901, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1747030463153266003}
+    - target: {fileID: 5145955010404732915, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_Name
+      value: FlyingEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197942675468521067, guid: b65221a2aec362a4c88178afaf60e5db,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b65221a2aec362a4c88178afaf60e5db, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8987,3 +9082,4 @@ SceneRoots:
   - {fileID: 2030934574}
   - {fileID: 1210196814}
   - {fileID: 1130517625}
+  - {fileID: 9120939085226740135}
