@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: -2198413428473076560}
   - component: {fileID: -4495637597821747555}
   - component: {fileID: -7362459158781203131}
+  - component: {fileID: 4432839335358209599}
+  - component: {fileID: 5023163239104180979}
   m_Layer: 5
   m_Name: HealthPotItem
   m_TagString: Item
@@ -205,3 +207,30 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &4432839335358209599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797623874468885397}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 419d640386e0ea24d99e525ebcd79fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5023163239104180979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797623874468885397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bde55869fe1e0d4ebb75620df03713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
+  Name: HealthPot
+  potionSize: 0
