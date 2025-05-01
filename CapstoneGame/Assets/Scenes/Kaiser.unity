@@ -1244,6 +1244,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1283891876}
+    - targetCorrespondingSourceObject: {fileID: 2797623874468885397, guid: ee1fdacf16e39d241a0c6ffec6f772a2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1283891877}
   m_SourcePrefab: {fileID: 100100000, guid: ee1fdacf16e39d241a0c6ffec6f772a2, type: 3}
 --- !u!1001 &1022937743
 PrefabInstance:
@@ -1829,11 +1833,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283891867}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 419d640386e0ea24d99e525ebcd79fca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1283891877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283891867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bde55869fe1e0d4ebb75620df03713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
+  Name: HealthPot
+  potionSize: 0
 --- !u!1001 &1417786842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2074,8 +2093,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3084933762826962557, guid: 6f5fdd17d31d2374ca62697f905ec7d4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1559312688}
   m_SourcePrefab: {fileID: 100100000, guid: 6f5fdd17d31d2374ca62697f905ec7d4, type: 3}
+--- !u!1 &1559312687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3084933762826962557, guid: 6f5fdd17d31d2374ca62697f905ec7d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1559312686}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1559312688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559312687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bde55869fe1e0d4ebb75620df03713b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
+  Name: HealthPack
+  potionSize: 1
 --- !u!1001 &1566607399
 PrefabInstance:
   m_ObjectHideFlags: 0
