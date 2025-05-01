@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovementAnimator : MonoBehaviour
 {
 
-    public float moveSpeed = 5f; // Speed of the player
+    public float moveSpeed = 10.0f; // Speed of the player
     public Rigidbody2D rb; // Reference to the Rigidbody2D component
     Vector2 movement;
     public Animator animator; // Reference to the Animator component
