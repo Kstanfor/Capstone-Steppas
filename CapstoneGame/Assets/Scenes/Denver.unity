@@ -140150,6 +140150,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6524344742292211972, guid: e57774b2c60670e4197d984b0d932ef5,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6524344742292211972, guid: e57774b2c60670e4197d984b0d932ef5,
+        type: 3}
+      propertyPath: MinDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8231143697373956433, guid: e57774b2c60670e4197d984b0d932ef5,
         type: 3}
       propertyPath: m_LocalPosition.x
