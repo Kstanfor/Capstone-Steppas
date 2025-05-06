@@ -23,8 +23,26 @@ public class EnemyScript : MonoBehaviour
     public int Y;
     public int Z;
 
+    public float soundRadius = 10f;
+    public AudioSource audioSource;
+
     void Update()
     {
+        if(Vector3.Distance(transform.position, Player.transform.position) <= soundRadius)
+        {
+            if(!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+        }
+
         if (PlayerDetected == true)
         {
             Distance = Vector2.Distance(transform.position, Player.transform.position);
@@ -33,8 +51,8 @@ public class EnemyScript : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, Speed * Time.deltaTime);
 
             FlipSprite = Player.transform.position;
-        }   
-        else if(PlayerDetected == false)
+        }
+        else if (PlayerDetected == false)
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(StartPositionX, StartPositionY), Speed * Time.deltaTime);
 
