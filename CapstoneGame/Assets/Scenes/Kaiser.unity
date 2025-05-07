@@ -1639,6 +1639,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4398706589979194083, guid: 7bcffb81d7b39254da8ca7c1451ff945,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.34637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398706589979194083, guid: 7bcffb81d7b39254da8ca7c1451ff945,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.34637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398706589979194083, guid: 7bcffb81d7b39254da8ca7c1451ff945,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3464
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398706589979194083, guid: 7bcffb81d7b39254da8ca7c1451ff945,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398706589979194083, guid: 7bcffb81d7b39254da8ca7c1451ff945,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.38146
+      objectReference: {fileID: 0}
     - target: {fileID: 4576216051648898481, guid: 7bcffb81d7b39254da8ca7c1451ff945,
         type: 3}
       propertyPath: m_Name
@@ -1854,7 +1879,7 @@ Transform:
   m_GameObject: {fileID: 723064051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.096, y: 0, z: 0}
+  m_LocalPosition: {x: -26.32, y: 17.94, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2788,7 +2813,6 @@ GameObject:
   - component: {fileID: 1204864334}
   - component: {fileID: 1204864336}
   - component: {fileID: 1204864335}
-  - component: {fileID: 1204864337}
   m_Layer: 5
   m_Name: ScrollReadPanel
   m_TagString: Untagged
@@ -2856,22 +2880,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204864333}
   m_CullTransparentMesh: 1
---- !u!114 &1204864337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204864333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dcdce63659382f4cb452ef654901cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  readPanel: {fileID: 1204864333}
-  titleText: {fileID: 1062413267}
-  contentText: {fileID: 1450792720}
-  closeButton: {fileID: 59872990}
 --- !u!224 &1220675879 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1749228552134606016, guid: 65b833d03b56e14429fbe626eb33bcb3,
@@ -3130,6 +3138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1420787965}
   - component: {fileID: 1420787964}
+  - component: {fileID: 1420787966}
   m_Layer: 0
   m_Name: ScrollManager
   m_TagString: Untagged
@@ -3164,6 +3173,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1420787966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420787963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dcdce63659382f4cb452ef654901cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  readPanel: {fileID: 1204864333}
+  titleText: {fileID: 1062413267}
+  contentText: {fileID: 1450792720}
+  closeButton: {fileID: 59872990}
 --- !u!1 &1450792718
 GameObject:
   m_ObjectHideFlags: 0
