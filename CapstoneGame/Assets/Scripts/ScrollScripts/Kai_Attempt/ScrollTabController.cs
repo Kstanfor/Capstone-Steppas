@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ScrollTabController : MonoBehaviour
 {
-    public GameObject scrollTabPanel;  // the parent panel in the Canvas
-    public GameObject slotPrefab;      // the ScrollSlot prefab
+    public GameObject scrollPage;  // the parent panel in the Canvas
+    public GameObject scrollSlotPrefab;      // the ScrollSlot prefab
 
     void OnEnable()
     {
@@ -13,14 +13,14 @@ public class ScrollTabController : MonoBehaviour
     public void RefreshTabs()
     {
         // clear old
-        foreach (Transform child in scrollTabPanel.transform)
+        foreach (Transform child in scrollPage.transform)
             Destroy(child.gameObject);
 
         // spawn one slot per collected scroll
         var collected = ScrollManager.Instance.GetCollected();
         for (int i = 0; i < collected.Count; i++)
         {
-            var go = Instantiate(slotPrefab, scrollTabPanel.transform);
+            var go = Instantiate(scrollSlotPrefab, scrollPage.transform);
             go.GetComponent<ScrollSlot>().Setup(collected[i]);
         }
     }

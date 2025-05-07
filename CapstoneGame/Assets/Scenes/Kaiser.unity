@@ -1745,7 +1745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834b3ec87b0f33f469b057e201c90aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollID: 1
+  scrollID: 
   scrollTitle: Test Scroll
   scrollContent: 'The cultest kept mentionding somethign about doors and keys.....? '
 --- !u!61 &723064053
@@ -2815,7 +2815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0236816, y: 2.7656403}
+  m_AnchoredPosition: {x: -1.0236816, y: 2.765625}
   m_SizeDelta: {x: -368.8307, y: 47.56775}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1204864335
@@ -3120,6 +3120,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65b833d03b56e14429fbe626eb33bcb3, type: 3}
+--- !u!1 &1420787963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420787965}
+  - component: {fileID: 1420787964}
+  m_Layer: 0
+  m_Name: ScrollManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1420787964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420787963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce37a316efbb02e43b8e79538d492c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1420787965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420787963}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 674, y: 293.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1450792718
 GameObject:
   m_ObjectHideFlags: 0
@@ -4308,6 +4352,7 @@ GameObject:
   - component: {fileID: 1321590332470471773}
   - component: {fileID: 6159367303352683942}
   - component: {fileID: 8359814215105339651}
+  - component: {fileID: 8359814215105339652}
   m_Layer: 5
   m_Name: ScrollPage
   m_TagString: Untagged
@@ -4668,11 +4713,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2031740313294260392, guid: 0b43dd12a3126d747a0777f3dbbd2b3b,
-        type: 3}
-      propertyPath: scrollTabPanel
-      value: 
-      objectReference: {fileID: 2069748121538148981}
     - target: {fileID: 7503268126215915573, guid: 0b43dd12a3126d747a0777f3dbbd2b3b,
         type: 3}
       propertyPath: inventoryPanel
@@ -5828,6 +5868,21 @@ MonoBehaviour:
   m_Spacing: {x: 50, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &8359814215105339652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069748121538148981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b42a00d786c7042a28080d18631c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollPage: {fileID: 2069748121538148981}
+  scrollSlotPrefab: {fileID: 8046748820587494740, guid: acb9478bf9699924c939cb036eea8413,
+    type: 3}
 --- !u!114 &8445515134268300457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6122,3 +6177,4 @@ SceneRoots:
   - {fileID: 707959493}
   - {fileID: 488767235}
   - {fileID: 723064055}
+  - {fileID: 1420787965}
