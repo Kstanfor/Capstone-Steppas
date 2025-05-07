@@ -57,6 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2011969377570669539}
   - component: {fileID: 7503268126215915573}
+  - component: {fileID: 2031740313294260392}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -97,5 +98,20 @@ MonoBehaviour:
     type: 3}
   slotCount: 18
   itemPrefabs:
-  - {fileID: 2797623874468885397, guid: ee1fdacf16e39d241a0c6ffec6f772a2, type: 3}
+  - {fileID: 0}
   - {fileID: 3084933762826962557, guid: 6f5fdd17d31d2374ca62697f905ec7d4, type: 3}
+--- !u!114 &2031740313294260392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385237317279670792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b42a00d786c7042a28080d18631c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollTabPanel: {fileID: 0}
+  slotPrefab: {fileID: 8046748820587494740, guid: acb9478bf9699924c939cb036eea8413,
+    type: 3}
