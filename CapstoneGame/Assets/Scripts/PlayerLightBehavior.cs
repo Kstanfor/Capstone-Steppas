@@ -37,9 +37,10 @@ public class PlayerLightBehavior : MonoBehaviour
         
     }
 
-    void resetLight()
+    public void resetLight()
     {
         transform.localScale = new Vector3(maxScale, maxScale, maxScale);
         GetComponent<Light>().range = MaxRange;
+        startTime = Time.time;
     }
 };
