@@ -18,6 +18,7 @@ public class ScrollManager : MonoBehaviour
     {
         if (!collected.Contains(scroll))
             collected.Add(scroll);
+            Debug.Log($"[ScrollManager] Collected: {scroll.scrollTitle}");
     }
 
     public IReadOnlyList<Scroll> GetCollected() => collected;

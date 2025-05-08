@@ -344,6 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6667090916142361398}
   - component: {fileID: 8077376315750428269}
+  - component: {fileID: 4849798811284310855}
   m_Layer: 0
   m_Name: ScrollSlot
   m_TagString: Untagged
@@ -351,22 +352,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6667090916142361398
-Transform:
+--- !u!224 &6667090916142361398
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8046748820587494740}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 674, y: 293.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7830883450095651386}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 674, y: 293.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8077376315750428269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,6 +386,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 888144377650508943}
   titleText: {fileID: 8099122337299168459}
+--- !u!225 &4849798811284310855
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8046748820587494740}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8982219941891194927
 GameObject:
   m_ObjectHideFlags: 0
