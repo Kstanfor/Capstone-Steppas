@@ -1744,12 +1744,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bcffb81d7b39254da8ca7c1451ff945, type: 3}
---- !u!1 &723064051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1782911276398815303, guid: fca7cafce47abdd47b28a60687c4492f,
-    type: 3}
-  m_PrefabInstance: {fileID: 603095205694702471}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &745919499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,9 +3068,6 @@ MonoBehaviour:
   scrollPage: {fileID: 2069748121538148981}
   scrollSlotPrefab: {fileID: 8046748820587494740, guid: acb9478bf9699924c939cb036eea8413,
     type: 3}
-  slotCount: 10
-  scrollPrefab:
-  - {fileID: 723064051}
 --- !u!1 &1450792718
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,7 +3864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Inventory
+  m_Text: Settings
 --- !u!222 &2018462429
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5864,8 +5855,6 @@ MonoBehaviour:
   scrollPage: {fileID: 2069748121538148981}
   scrollSlotPrefab: {fileID: 8046748820587494740, guid: acb9478bf9699924c939cb036eea8413,
     type: 3}
-  slotCount: 0
-  scrollPrefab: []
 --- !u!114 &8445515134268300457
 MonoBehaviour:
   m_ObjectHideFlags: 0

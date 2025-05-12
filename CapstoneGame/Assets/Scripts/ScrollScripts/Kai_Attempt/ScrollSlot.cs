@@ -6,7 +6,7 @@ public class ScrollSlot : MonoBehaviour
 {
     public Button button;
     public TMP_Text titleText;
-    internal GameObject currentItem;
+    
     private Scroll scrollData;
 
     public void Setup(Scroll scroll)
