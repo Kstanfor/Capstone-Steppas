@@ -35,9 +35,6 @@ public class ScrollUIManager : MonoBehaviour
 
         // record collection
         ScrollManager.Instance.AddScroll(scroll);
-
-        
-
     }
 
     public void CloseScroll()
