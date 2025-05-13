@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerItemCollector : MonoBehaviour
 {
     private InventoryController inventoryController;
+    public float collectionRange = 10f;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -12,22 +15,55 @@ public class PlayerItemCollector : MonoBehaviour
         inventoryController = FindObjectOfType<InventoryController>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void Update()
     {
-        if (collision.CompareTag("Item"))
+        // Use Physics2D.OverlapCircleAll to find all items within the range
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, collectionRange);
+
+        foreach (var collider in colliders)
         {
-            Item item = collision.GetComponent<Item>();
-
-            if (item != null)
+            if (collider.CompareTag("Item"))
             {
-                bool itemAdded = inventoryController.AddItem(collision.gameObject);
+                Item item = collider.GetComponent<Item>();
 
-                if (itemAdded)
+                if (item != null)
                 {
-                    item.PickUp();
-                    Destroy(collision.gameObject);
+                    bool itemAdded = inventoryController.AddItem(collider.gameObject);
+
+                    if (itemAdded)
+                    {
+                        item.PickUp();
+                        Destroy(collider.gameObject);
+                    }
                 }
             }
         }
     }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, collectionRange); // Show range as a wire sphere
+    }
+
+
+
+    // private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //   if (collision.CompareTag("Item"))
+    //  {
+    //    Item item = collision.GetComponent<Item>();
+
+    //   if (item != null)
+    // {
+    //   bool itemAdded = inventoryController.AddItem(collision.gameObject);
+
+    // if (itemAdded)
+    //{
+    //  item.PickUp();
+    // Destroy(collision.gameObject);
+    // }
+    //}
+    //}
+    //}
 }

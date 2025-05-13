@@ -7,6 +7,10 @@ public class InteractionDectector : MonoBehaviour
 {
     private IInteractable interactableInRange = null;
     public GameObject interactionIcon;
+
+    // [Header("Interaction range")]
+    public float Range = 15f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,23 +34,42 @@ public class InteractionDectector : MonoBehaviour
                 interactableInRange.Interact();
             }
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, Range);
+        foreach (var collider in colliders)
         {
-            interactableInRange = interactable;
-            interactionIcon.SetActive(true);
-        }
-    }
+            if (collider.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
+            {
+                // Set the interactableInRange if an interactable object is found
+                interactableInRange = interactable;
+                interactionIcon.SetActive(true);
+                return;  // Exit once an interactable object is found
+            }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.TryGetComponent(out IInteractable interactable) && interactable == interactableInRange)
-        {
             interactableInRange = null;
             interactionIcon.SetActive(false);
+
         }
+
+
     }
+
+   // private void OnTriggerEnter2D(Collider2D collision)
+   // {
+      //  if (collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
+       // {
+         //   interactableInRange = interactable;
+          //  interactionIcon.SetActive(true);
+        //}
+    //}
+
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+      //  if (collision.TryGetComponent(out IInteractable interactable) && interactable == interactableInRange)
+        //{
+          //  interactableInRange = null;
+            //interactionIcon.SetActive(false);
+        //}
+    //}
+
 }
