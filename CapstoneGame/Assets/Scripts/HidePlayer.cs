@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HidePlayer : MonoBehaviour
 {
-    HidingSpots IsTouchingHideSpot;
+    public HidingSpots IsTouchingHideSpot;
     public bool ShowPlayer;
 
     public GameObject PlayerObject;

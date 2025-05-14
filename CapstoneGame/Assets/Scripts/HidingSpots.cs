@@ -8,17 +8,8 @@ public class HidingSpots : MonoBehaviour
 
     public bool ShouldAnimate = false;
 
-    public Animator animator;
-
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
     void Update()
     {
-        var HidePlayer = animator.GetBool("IsPlayerHiding");
-
         if (Input.GetKey(KeyCode.E) && isTouchingPlayer == true)
         {
             ShouldAnimate = true;
@@ -26,15 +17,6 @@ public class HidingSpots : MonoBehaviour
         else
         {
             ShouldAnimate = false;
-        }
-
-        if(ShouldAnimate == true)
-        {
-            animator.SetBool("IsPlayerHiding", true);
-        }
-        else if(ShouldAnimate == false)
-        {
-            animator.SetBool("IsPlayerHiding", false);
         }
     }
 
