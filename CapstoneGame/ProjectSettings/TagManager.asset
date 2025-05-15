@@ -9,6 +9,22 @@ TagManager:
   - MovementSpeed
   - Item
   - Enemy
+  - Hide2
+  - Hide3
+  - Hide4
+  - Hide5
+  - Hide6
+  - Hide7
+  - Hide8
+  - Hide9
+  - Hide10
+  - Hide11
+  - Hide12
+  - Hide13
+  - Hide14
+  - Hide15
+  - Hide16
+  - Hide1
   layers:
   - Default
   - TransparentFX
