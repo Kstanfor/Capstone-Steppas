@@ -14,13 +14,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Denver.unity
     guid: e0593d7f23d37ad4b861406394fbc79d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TutorialIntro.unity
     guid: d425793663f655c4fbf3a40f1501562a
   - enabled: 0
     path: Assets/Scenes/Johnny.unity
     guid: 86e89bd9e4a9c5245a015cf17e3c0aae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Uh.unity
     guid: 668b5f18732c2224ba4eb368e94fd004
   - enabled: 1
