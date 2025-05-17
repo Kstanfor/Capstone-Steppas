@@ -191,10 +191,14 @@ public class Tutorial : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                KeyTutorialText.gameObject.SetActive(false);
-                NextText.gameObject.SetActive(false);
-                DialogBoxTutorial.gameObject.SetActive(false);
+                Steps++;
             }
+        }
+        else if(Steps == 10)
+        {
+            KeyTutorialText.gameObject.SetActive(false);
+            NextText.gameObject.SetActive(false);
+            DialogBoxTutorial.gameObject.SetActive(false);
         }
     }
 }

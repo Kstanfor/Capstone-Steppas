@@ -65,6 +65,8 @@ public class HidePlayer : MonoBehaviour
                 playerCollider.enabled = false;
                 if (playerMovement != null) playerMovement.enabled = false;
                 if (playerAnimatorMovement != null) playerAnimatorMovement.enabled = false;
+                Rigidbody2D rb = PlayerObject.GetComponent<Rigidbody2D>();
+                if (rb != null) rb.velocity = Vector2.zero;
                 isHidden = true;
                 Debug.Log("Player hidden");
             }
