@@ -329,8 +329,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.1, y: 94.2}
-  m_SizeDelta: {x: 562.2464, y: 78.6483}
+  m_AnchoredPosition: {x: -159.67747, y: 80.62167}
+  m_SizeDelta: {x: 461.125, y: 194.6352}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894353534
 MonoBehaviour:
@@ -370,7 +370,22 @@ MonoBehaviour:
     Steampunk Lamps - Admurin
 
     Tiny RPG Forest
-    Character - Ansimuz'
+    Character - Ansimuz
+
+    Rouge Fantasy "Catacombs" - Szadi art
+
+    Zombie Apocalypse
+    - Ittai Manero
+
+    Pixel Art Top Down Basic -Cainos
+
+    Free Zombie Sprite
+    Sheet Pack Pixel Art - Craftpix.net
+
+    2D Pixel Art Cacodaemon Sprites - Elthen
+
+    EyeoftheVoid
+    Sprite Sheet - TwoSidersGames'
 --- !u!222 &894353535
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -481,6 +496,7 @@ RectTransform:
   - {fileID: 1959568092}
   - {fileID: 1416558497}
   - {fileID: 894353533}
+  - {fileID: 2061021232}
   m_Father: {fileID: 1565873633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -560,7 +576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -181.68, y: 125.19}
+  m_AnchoredPosition: {x: 35, y: 175}
   m_SizeDelta: {x: 220.8856, y: 92.2898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1416558498
@@ -743,7 +759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -162.98, y: -98.97}
+  m_AnchoredPosition: {x: -258, y: -129}
   m_SizeDelta: {x: 264.49, y: 144.7262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1959568093
@@ -1008,6 +1024,90 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060405254}
+  m_CullTransparentMesh: 1
+--- !u!1 &2061021231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2061021232}
+  - component: {fileID: 2061021234}
+  - component: {fileID: 2061021233}
+  m_Layer: 5
+  m_Name: Assets (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2061021232
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061021231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1318165538}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 255, y: 80.62167}
+  m_SizeDelta: {x: 363.3406, y: 194.6352}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2061021233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061021231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: d62088bb936c4a645a64c52ab19059b5, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Antique Furniture Pack 2.0 - IvoryRed
+
+    Sketch Fantasy Items/Icons
+    - Aeynit
+
+    Heart - Lamrenz'
+--- !u!222 &2061021234
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061021231}
   m_CullTransparentMesh: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
