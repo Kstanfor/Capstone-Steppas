@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 10.0f;
+    [HideInInspector]
+    public Vector2 movement;
+
+    public float speed;
     float speedX;
     float speedY;
 
@@ -24,9 +27,9 @@ public class PlayerMovement : MonoBehaviour
         CrouchTrigger.SetActive(false);
     }
 
-    public void Sprint()
+    public void MovementSpeed()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
             speed = 20.0f;
 
@@ -34,19 +37,7 @@ public class PlayerMovement : MonoBehaviour
             CrouchTrigger.SetActive(false);
             WalkTrigger.SetActive(false);
         }
-        else if(Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
-        {
-            speed = 10.0f;
-
-            SprintTrigger.SetActive(false);
-            CrouchTrigger.SetActive(false);
-            WalkTrigger.SetActive(true);
-        }
-    }
-
-    public void Crouch()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
+        else if(Input.GetKey(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
         {
             speed = 3.0f;
 
@@ -54,10 +45,9 @@ public class PlayerMovement : MonoBehaviour
             CrouchTrigger.SetActive(true);
             WalkTrigger.SetActive(false);
         }
-        else if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.RightControl))
+        else
         {
             speed = 10.0f;
-
             SprintTrigger.SetActive(false);
             CrouchTrigger.SetActive(false);
             WalkTrigger.SetActive(true);
@@ -66,21 +56,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        MovementSpeed();
+
         speedX = Input.GetAxisRaw("Horizontal") * speed;
         speedY = Input.GetAxisRaw("Vertical") * speed;
 
         rb.velocity = new Vector2(speedX, speedY);
 
-        Sprint();
-
-        Crouch();
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Hide" && Input.GetKeyDown("e"))
-        {
-
-        }
+        movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
     }
 }

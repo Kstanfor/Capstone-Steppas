@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayerMovementAnimator : MonoBehaviour
 {
 
-    public float moveSpeed = 10.0f; // Speed of the player
-    public Rigidbody2D rb; // Reference to the Rigidbody2D component
-    Vector2 movement;
+    //public float moveSpeed = 10.0f; // Speed of the player
+   // public Rigidbody2D rb; // Reference to the Rigidbody2D component
+    //Vector2 movement;
     public Animator animator; // Reference to the Animator component
+    public PlayerMovement playerMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,8 @@ public class PlayerMovementAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector2 movement = playerMovement.movement;
+
         movement.x = Input.GetAxisRaw("Horizontal"); // Get the horizontal input
         movement.y = Input.GetAxisRaw("Vertical"); // Get the vertical input
 
@@ -30,6 +33,6 @@ public class PlayerMovementAnimator : MonoBehaviour
     void FixedUpdate()
     {
         // Movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+      //  rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }

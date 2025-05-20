@@ -6,7 +6,11 @@ public class HidePlayer : MonoBehaviour
     public List<HidingSpots> hidingSpots = new List<HidingSpots>();
     public GameObject PlayerObject;
 
-    private bool isHidden = false;
+    public GameObject WalkTrigger;
+    public GameObject SprintTrigger;
+    public GameObject CrouchTrigger;
+
+    public bool isHidden = false;
     private SpriteRenderer spriteRenderer;
     private Collider2D playerCollider;
     private PlayerMovement playerMovement;
@@ -54,21 +58,48 @@ public class HidePlayer : MonoBehaviour
             {
                 spriteRenderer.enabled = true;
                 playerCollider.enabled = true;
-                if (playerMovement != null) playerMovement.enabled = true;
-                if (playerAnimatorMovement != null) playerAnimatorMovement.enabled = true;
+
+                if (playerMovement != null)
+                {
+                    playerMovement.enabled = true;
+                }
+
+                if (playerAnimatorMovement != null)
+                {
+                    playerAnimatorMovement.enabled = true;
+                }
+
+                WalkTrigger.SetActive(true);
+
                 isHidden = false;
-                Debug.Log("Player shown");
             }
             else if (touchingAnyHideSpot)
             {
                 spriteRenderer.enabled = false;
                 playerCollider.enabled = false;
-                if (playerMovement != null) playerMovement.enabled = false;
-                if (playerAnimatorMovement != null) playerAnimatorMovement.enabled = false;
+
+                if (playerMovement != null)
+                {
+                    playerMovement.enabled = false;
+                }
+
+                if (playerAnimatorMovement != null)
+                {
+                    playerAnimatorMovement.enabled = false;
+                }
+
                 Rigidbody2D rb = PlayerObject.GetComponent<Rigidbody2D>();
-                if (rb != null) rb.velocity = Vector2.zero;
+
+                if (rb != null)
+                {
+                    rb.velocity = Vector2.zero;
+                }
+
+                WalkTrigger.SetActive(false);
+                SprintTrigger.SetActive(false);
+                CrouchTrigger.SetActive(false);
+
                 isHidden = true;
-                Debug.Log("Player hidden");
             }
         }
     }
