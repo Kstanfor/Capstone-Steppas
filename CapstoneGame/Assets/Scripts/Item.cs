@@ -9,8 +9,6 @@ public class Item : MonoBehaviour
 
     public string Name;
 
-    public GameObject uiPrefab;
-
     public virtual void UseItem()
     {
         Debug.Log("Using item " +  Name);
