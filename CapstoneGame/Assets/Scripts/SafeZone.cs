@@ -6,12 +6,15 @@ using UnityEngine;
 
 public class SafeZone : MonoBehaviour
 {
+    public GameObject Point;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerHealth>().Health = 3;
+
+            collision.gameObject.GetComponent<PlayerHealth>().respawnPoint = Point.GetComponent<Transform>();
 
             collision.gameObject.GetComponent<PlayerLightBehavior>().transform.localScale =
                 new Vector3(collision.gameObject.GetComponent<PlayerLightBehavior>().maxScale, 

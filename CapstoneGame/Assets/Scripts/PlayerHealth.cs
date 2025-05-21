@@ -15,6 +15,8 @@ public class PlayerHealth : MonoBehaviour
 
     public GameObject Player;
 
+    public Transform respawnPoint;
+
 
     void Update()
     {
@@ -36,6 +38,12 @@ public class PlayerHealth : MonoBehaviour
         {
             Heart3.SetActive(false);
             Player.SetActive(false);
+
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                Player.transform.position = respawnPoint.transform.position;
+                Player.SetActive(true);
+            }
         }
         else if(Health == 3)
         {
