@@ -44,10 +44,7 @@ public class ItemPickUpUIController : MonoBehaviour
         {
             Destroy(activePopups.Dequeue());
         }
-
-        //Fadeout and then Detroy
         StartCoroutine(FadeOutAndDestroy(newPopup));
-
     }
 
     private IEnumerator FadeOutAndDestroy(GameObject popup)

@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Item : MonoBehaviour
+public class Item : MonoBehaviour, IPointerClickHandler
 {
     public int ID;
 
@@ -21,5 +22,10 @@ public class Item : MonoBehaviour
         {
             ItemPickUpUIController.Instance.ShowItemPickUp(Name, itemIcon);
         }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        UseItem();
     }
 }

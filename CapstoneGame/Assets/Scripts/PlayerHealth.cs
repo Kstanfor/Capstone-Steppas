@@ -40,11 +40,10 @@ public class PlayerHealth : MonoBehaviour
             Player.SetActive(false);
 
             deathText.SetActive(true);
+
             if(Input.GetKeyDown(KeyCode.R))
             {
-                Player.SetActive(true);
-                Player.transform.position = respawnPoint.transform.position;
-                
+                Respawn();
             }
         }
         else if(Health == 3)
@@ -52,6 +51,20 @@ public class PlayerHealth : MonoBehaviour
             Heart1.SetActive(true);
             Heart2.SetActive(true);
             Heart3.SetActive(true);
+        }
+    }
+
+    public void Respawn()
+    {
+        if (respawnPoint != null)
+        {
+            Player.transform.position = respawnPoint.position;
+
+            Health = 3;
+
+            Player.SetActive(true);
+
+            deathText.SetActive(false);
         }
     }
 

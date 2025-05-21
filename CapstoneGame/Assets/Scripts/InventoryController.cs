@@ -1,19 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InventoryController : MonoBehaviour
 {
-    //private ItemDictionary itemDictionary;
-
     public GameObject inventoryPanel;
     public GameObject slotPrefab;
     public int slotCount;
     public GameObject[] itemPrefabs;
-    // Start is called before the first frame update
     void Start()
     {
-        //itemDictionary = FindObjectOfType<ItemDictionary>();
         for (int i = 0; i < slotCount; i++)
         {
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
@@ -49,11 +46,5 @@ public class InventoryController : MonoBehaviour
         }
         Debug.Log("Inventory Full");
         return false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

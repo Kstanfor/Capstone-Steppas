@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class KeyScript : MonoBehaviour
@@ -23,90 +22,104 @@ public class KeyScript : MonoBehaviour
     public bool TouchDoor4 = false;
     public bool TouchDoor5 = false;
 
-    public Vector3 Level1 = new Vector3(-51f, 25f, -2f);
-    public Vector3 Level2 = new Vector3(-65f, -39f, -2f);
-    public Vector3 Level3 = new Vector3(-204f, 33f, -2f);
-    public Vector3 Level4 = new Vector3(71f, -30f, -2f);
-    public Vector3 Level5 = new Vector3(60f, 200f, -2f);
+    public GameObject SafeZone1; 
+    public GameObject SafeZone2; 
+    public GameObject SafeZone3; 
+    public GameObject SafeZone4; 
+    public GameObject SafeZone5;
+
+    public bool CheckEndGame = false;
+
+    private Rigidbody2D rb;
+    private Collider2D playerCollider;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        playerCollider = GetComponent<Collider2D>();
+    }
 
     void Update()
     {
-        if(TouchDoor1 == true && CollectTutorialKey == false)
+        if (TouchDoor1 == true && CollectTutorialKey == true)
         {
-            //Play locked sound
-        }
-        else if(TouchDoor1 == true && CollectTutorialKey == true)
-        {
-            transform.position = Level1;
+            TeleportToSafeZone(SafeZone1);
+            TouchDoor1 = false;
         }
 
-        if (TouchDoor2 == true && CollectLevel1Key == false)
+        if (TouchDoor2 == true && CollectLevel1Key == true)
         {
-            //Play locked sound
-        }
-        else if (TouchDoor2 == true && CollectLevel1Key == true)
-        {
-            transform.position = Level2;
+            TeleportToSafeZone(SafeZone2);
+            TouchDoor2 = false;
         }
 
-        if (TouchDoor3 == true && CollectLevel2Key == false)
+        if (TouchDoor3 == true && CollectLevel2Key == true)
         {
-            //Play locked sound
-        }
-        else if (TouchDoor3 == true && CollectLevel2Key == true)
-        {
-            transform.position = Level3;
+            TeleportToSafeZone(SafeZone3);
+            TouchDoor3 = false;
         }
 
-        if (TouchDoor4 == true && CollectLevel3Key == false)
+        if (TouchDoor4 == true && CollectLevel3Key == true)
         {
-            //Play locked sound
-        }
-        else if (TouchDoor4 == true && CollectLevel3Key == true)
-        {
-            transform.position = Level4;
+            TeleportToSafeZone(SafeZone4);
+            TouchDoor4 = false;
         }
 
-        if (TouchDoor4 == true && CollectLevel4Key == false)
+        if (TouchDoor5 == true && CollectLevel4Key == true)
         {
-            //Play locked sound
+            TeleportToSafeZone(SafeZone5);
+
+            CheckEndGame = true;
         }
-        else if (TouchDoor4 == true && CollectLevel4Key == true)
+    }
+
+    private void TeleportToSafeZone(GameObject safeZone)
+    {
+        if (safeZone != null)
         {
-            transform.position = Level5;
+            rb.position = safeZone.transform.position; 
+            playerCollider.enabled = false; 
+
+            StartCoroutine(SafeTeleport());
         }
+    }
+
+    private IEnumerator SafeTeleport()
+    {
+        yield return null; 
+        playerCollider.enabled = true; 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "GoldKeyTouch1")
+        if (collision.gameObject.name == "TutorialGoldKey")
         {
             CollectTutorialKey = true;
         }
 
-        if(collision.gameObject.name == "BronzeKeyTouch2")
+        if (collision.gameObject.name == "Level1BronzeKey")
         {
             CollectLevel1Key = true;
         }
 
-
-        if (collision.gameObject.name == "SilverKeyTouch3")
+        if (collision.gameObject.name == "Level2SilverKey")
         {
             CollectLevel2Key = true;
         }
 
-
-        if (collision.gameObject.name == "BronzeKeyTouch4")
+        if (collision.gameObject.name == "Level3BronzeKey")
         {
             CollectLevel3Key = true;
         }
 
-
-        if (collision.gameObject.name == "GoldKeyTouch5")
+        if (collision.gameObject.name == "Level4GoldKey")
         {
             CollectLevel4Key = true;
         }
+    }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         if (collision.gameObject.name == "Door1")
         {
             TouchDoor1 = true;
@@ -117,18 +130,15 @@ public class KeyScript : MonoBehaviour
             TouchDoor2 = true;
         }
 
-
         if (collision.gameObject.name == "Door3")
         {
             TouchDoor3 = true;
         }
 
-
         if (collision.gameObject.name == "Door4")
         {
             TouchDoor4 = true;
         }
-
 
         if (collision.gameObject.name == "Door5")
         {
@@ -148,18 +158,15 @@ public class KeyScript : MonoBehaviour
             TouchDoor2 = false;
         }
 
-
         if (collision.gameObject.name == "Door3")
         {
             TouchDoor3 = false;
         }
 
-
         if (collision.gameObject.name == "Door4")
         {
             TouchDoor4 = false;
         }
-
 
         if (collision.gameObject.name == "Door5")
         {
