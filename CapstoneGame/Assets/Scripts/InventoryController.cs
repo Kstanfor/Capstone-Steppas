@@ -27,16 +27,23 @@ public class InventoryController : MonoBehaviour
         }
     }
 
-    public bool AddItem(GameObject itemPrefab)
+    public bool AddItem(GameObject itemObject)
     {
         foreach (Transform slotTransform in inventoryPanel.transform)
         {
             Slot slot = slotTransform.GetComponent<Slot>();
             if (slot != null && slot.currentItem == null)
             {
-                GameObject newItem = Instantiate(itemPrefab, slot.transform);
-                newItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-                slot.currentItem = newItem;
+                itemObject.transform.SetParent(slot.transform);
+                itemObject.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                slot.currentItem = itemObject;
+
+                Collider2D col = itemObject.GetComponent<Collider2D>();
+                if (col) col.enabled = false;
+
+                Rigidbody2D rb = itemObject.GetComponent<Rigidbody2D>();
+                if (rb) rb.simulated = false;
+
                 return true;
             }
         }

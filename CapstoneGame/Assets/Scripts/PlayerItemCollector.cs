@@ -35,6 +35,11 @@ public class PlayerItemCollector : MonoBehaviour
                         item.PickUp();
                         Destroy(collider.gameObject);
                     }
+
+                    //if (!itemAdded)
+                    //{
+                        //Debug.LogWarning($"Could not add item: {item.Name}");
+                    //}
                 }
             }
         }
