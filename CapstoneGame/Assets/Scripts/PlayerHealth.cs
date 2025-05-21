@@ -17,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
 
     public Transform respawnPoint;
 
-
+    public GameObject deathText;
     void Update()
     {
         if(Damage == true)
@@ -39,6 +39,7 @@ public class PlayerHealth : MonoBehaviour
             Heart3.SetActive(false);
             Player.SetActive(false);
 
+            deathText.SetActive(true);
             if(Input.GetKeyDown(KeyCode.R))
             {
                 Player.transform.position = respawnPoint.transform.position;
