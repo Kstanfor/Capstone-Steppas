@@ -8,7 +8,8 @@ public class Item : MonoBehaviour
     public int ID;
 
     public string Name;
-    
+
+    public GameObject uiPrefab;
 
     public virtual void UseItem()
     {
