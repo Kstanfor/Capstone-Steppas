@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7558306509149415245}
   - component: {fileID: 9119560152500747596}
   - component: {fileID: -1922805475258161589}
+  - component: {fileID: 1611866712924323382}
   m_Layer: 0
   m_Name: FireWSmoke
   m_TagString: Untagged
@@ -203,3 +204,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1611866712924323382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4222994294714837915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489ceb9c4966c6e4e9ccbb1fcc393f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

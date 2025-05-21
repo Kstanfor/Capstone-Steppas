@@ -11,6 +11,10 @@ public class Door : MonoBehaviour
     private SpriteRenderer sr;
     public Sprite openDoor;
 
+    public AudioClip[] sounds;
+
+    public AudioSource audioSource;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +37,8 @@ public class Door : MonoBehaviour
             {
                 if(GameObject.FindGameObjectWithTag("GameController").GetComponent<InventoryController>().itemPrefabs.ElementAt(i) == requiredKey)
                 {
+                    AudioClip sound = sounds[Random.Range(0, sounds.Length)];
+                    audioSource.PlayOneShot(sound);
                     doorCollider.SetActive(false);
                     sr.sprite = openDoor;
                 }

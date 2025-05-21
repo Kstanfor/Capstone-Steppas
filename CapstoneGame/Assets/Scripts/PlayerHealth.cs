@@ -42,8 +42,9 @@ public class PlayerHealth : MonoBehaviour
             deathText.SetActive(true);
             if(Input.GetKeyDown(KeyCode.R))
             {
-                Player.transform.position = respawnPoint.transform.position;
                 Player.SetActive(true);
+                Player.transform.position = respawnPoint.transform.position;
+                
             }
         }
         else if(Health == 3)
